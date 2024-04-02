@@ -18,6 +18,14 @@ exec > >(tee -i -a "$logfile") 2> >(tee -i -a "$logfile" >&2)
 
 echo "Running test with user $(whoami)"
 
+echo "************ ${assignment} *************"
+echo "************ ${SKIP_BUILD} *************"
+echo "************ ${DO_VALIDATE} *************"
+echo "./assignment-autotest/test/${assignment}/assignment-test.sh"
+echo "./assignment-autotest/test/${assignment}/assignment-test.sh"
+
+
+
 set +e
 
 # If there's a configuration for the assignment number, use this to look for
